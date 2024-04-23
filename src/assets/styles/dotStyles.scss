@@ -1,0 +1,53 @@
+@import './mixins.scss';
+
+$dot-container-radius: 50%;
+$dot-size: 6px;
+$container-radius: 265px;
+
+.circle_container {
+  position: relative;
+  width: 530px;
+  height: 530px;
+  border-radius: $dot-container-radius;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid rgb(#42567a, 0.2);
+  margin: 0 auto;
+  z-index: 3;
+
+  .dot {
+    margin-top: 263px;
+    margin-left: 264px;
+    position: relative;
+    width: $dot-size;
+    height: $dot-size;
+    background-color: var(--Black-blue, #42567a);
+    border-radius: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .open {
+    border: 1px solid rgb(66, 86, 122);
+    background-color: white;
+    height: 56px;
+    width: 56px;
+  }
+
+  .number {
+    @include font;
+    position: absolute;
+  }
+
+  .label {
+    @include font;
+    font-weight: 700;
+    padding-left: 180px;
+    opacity: 0;
+  }
+}

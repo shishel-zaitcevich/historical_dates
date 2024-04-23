@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "types": [
+      "gsap"
+    ],
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "esModuleInterop": true,
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src",
+    "declarations.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

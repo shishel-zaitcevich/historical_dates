@@ -1,0 +1,135 @@
+// .swiper_container {
+//   width: 1440px;
+//   height: 140px;
+//   padding-bottom: 50px;
+// }
+
+.slider {
+  position: relative;
+  width: 1440px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.swiper {
+  height: 140px;
+  overflow: clip;
+  align-self: flex-start;
+  // margin-left: 40px;
+}
+
+.swiper-wrapper {
+  width: 1200px;
+  height: 140px;
+  display: flex;
+  gap: 80px;
+}
+
+.swiper-slide {
+  width: 320px !important;
+  height: 140px;
+  margin: 0 !important;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 80px;
+  margin-bottom: 56px;
+  width: 120px;
+}
+
+.page {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.page.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.swiper__wrapper {
+  height: 370px;
+}
+
+.swiper__button-prev,
+.swiper__button-next {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/blue_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  filter: drop-shadow(0px 0px 15px rgba(56, 119, 238, 0.1));
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.swiper__button-prev {
+  rotate: 180deg;
+}
+
+.swiper_slide__year {
+  color: #3877ee;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 30px */
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.swiper_slide__description {
+  color: var(--Black-blue, #42567a);
+  font-family: 'PT Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.pagination__button-prev,
+.pagination__button-next {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  filter: drop-shadow(0px 0px 15px rgba(56, 119, 238, 0.1));
+  border: 1px solid #42567a;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination__button-next {
+  rotate: 180deg;
+}
+
+.pagination__button-prev:disabled,
+.pagination__button-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
